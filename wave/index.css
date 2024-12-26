@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f5e4b2;
+    background-image: url(wave-primary.svg), url(wave.svg);
+    background-repeat: no-repeat;
+    background-size: 65%, 68%;
+    background-position: 130% 15%, 128% 15%;
+    animation: wave 3s cubic-bezier(0.28, 0, 0.41, 1) infinite;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    
+  }
+  h1{
+    color: rgb(58, 175, 248);
+    font-size: 70px;
+    margin-left: 250px;
+  }
+  h1 span{
+    color: darkblue;
+  }
+  
+  @keyframes wave {
+    0%,
+    100% {
+      background-position-x: 130%, 128%;
+    }
+    60% {
+      background-position-x: 140%, 140%;
+    }
+  }
